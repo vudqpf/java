@@ -157,7 +157,7 @@ public class J0721_1 {
 						System.out.print(arr.get(k).getPosition()+"\t");
 						System.out.print(arr.get(k).getAge()+"\n");	
 					}
-					System.out.println("-----------삭제 종료------------");
+					System.out.println("-----------삭제 종료-----------");
 					
 				
 			}
