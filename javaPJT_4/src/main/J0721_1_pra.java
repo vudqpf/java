@@ -20,16 +20,16 @@ public class J0721_1_pra {
 
 
 		DecimalFormat df = new DecimalFormat("0000");
-		String a = "KB_0024_A";
+		String ar = "KB_0024_A";
 		a = a.substring(3, 7);
 		System.out.println(a);
-		int n = Integer.parseInt(a);
-		n++;
-		a = df.format(n);
-		df.f
+		int nr = Integer.parseInt(a);
+		nr++;
+		ar = df.format(n);
+		df.format
 
 				
-		a = Integer.toString(n);
+		arr = Integer.toString(n);
 		System.out.println(a);
 		if(a.length() == 1) a = "000"+a;
 		else if(a.length() == 2) a = "00"+a;
