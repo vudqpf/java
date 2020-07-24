@@ -26,7 +26,7 @@ public class J0721_1_pra {
 		int nr = Integer.parseInt(a);
 		nr++;
 		ar = df.format(n);
-		df.format
+
 
 				
 		arr = Integer.toString(n);
