@@ -1,11 +1,11 @@
-package pra;
+package main;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 import dto.J0714_2_dto;
 
-public class J0714 {
+public class J0714_1_pra {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		ArrayList<J0714_2_dto> arr = new ArrayList<>();

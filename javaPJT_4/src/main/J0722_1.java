@@ -20,7 +20,7 @@ public class J0722_1 {
 		
 		int gubun = 0;
 		do {
-			System.out.print("검색:1 , 등록:2, 수정:3, 삭제:4, 종료:0 ");
+			System.out.print("검색:1 , 등록:2, 수정:3, 삭제:4, 종료:0");
 			gubun = sc.nextInt();
 			if(gubun == 1) {
 				System.out.print("이름검색:1 지역검색:2 나이검색:3");
@@ -128,18 +128,35 @@ public class J0722_1 {
 				String delete = sc.next();
 				int remove = -1;
 					for(int k = 0; k < arr.size(); k++) {
-							if(arr.get(k).getNo().equals("delete")) {
+							if(arr.get(k).getNo().equals(delete)) {
 								remove = k;
 								System.out.print(arr.get(k).getNo()+"\t");
 								System.out.print(arr.get(k).getName()+"\t");
 								System.out.print(arr.get(k).getArea()+"\t");
 								System.out.print(arr.get(k).getAge()+"\n");
 						}
+					}if(remove == -1) {
+						System.out.print("수정정보 없음");
+					}else {
+						System.out.print("정말 삭제 하시겠습니까 예:Y  아니오:N");
+						String yn = sc.next();
+						if(yn.equals("Y")||yn.equals("y")) {
+							arr.remove(remove);	
+							for(int k = 0; k < arr.size(); k++) {
+								System.out.print(arr.get(k).getNo()+"\t");
+								System.out.print(arr.get(k).getName()+"\t");
+								System.out.print(arr.get(k).getArea()+"\t");
+								System.out.print(arr.get(k).getAge()+"\n");
+							}
+						}
 						
 						
-					arr.remove(delete);
 					}
-				}
+						
+						
+					
+			}
+			
 					
 
 		}while(gubun != 0);
