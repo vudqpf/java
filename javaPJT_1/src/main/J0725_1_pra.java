@@ -3,8 +3,8 @@ package main;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import dto.J0725_1_dao_pra;
-import dto.J0725_1_dto_pra;
+import dao.J0725_1_dao_pra;
+import dao.J0725_1_dto_pra;
 
 public class J0725_1_pra {
 	public static void main(String[] args) {
@@ -70,7 +70,14 @@ public class J0725_1_pra {
 						no = dao.getNo(n);
 					}
 					System.out.print("이름은 :");
-					String n = sc.next();
+					String name = sc.next();
+					System.out.println("지역은 :");
+					String area = sc.next();
+					System.out.println("나이는 :");
+					int age = sc.nextInt();
+					
+					
+					
 					
 						
 				System.out.print("-----------등록 종료-------------");

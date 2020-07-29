@@ -13,10 +13,11 @@ public class DB_test {
 		
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		String query = "select id, name, area, age from member";
+		String query = "select id, name, area, age from member";   
 		try {
-			ps = con.prepareStatement(query); 
+			ps = con.prepareStatement(query); //prepareStatement에 실행시킬 query문을 넣어놓으면 즉! 준비하기
 			rs = ps.executeQuery();   //여기에는 jsl_db에 들어있는 4명의 값이 들어가 있음
+			
 			while(rs.next()) {   	//rs의 행수 만큼 돈다는 얘기 즉!5행부터는 while문 종료
 				String id = rs.getString(1);  //1컬럼을 뜻함 즉! id를 야기함
 				String name = rs.getString("name");  //컬럼명과 정확히 일치해야 된다

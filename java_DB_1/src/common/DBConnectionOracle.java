@@ -9,7 +9,7 @@ public class DBConnectionOracle {
 	
 	public Connection getConnection() {
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");	 	
+			Class.forName("oracle.jdbc.driver.OracleDriver");	//
 		} catch (Exception ex) {
 			System.out.println("드라이버 없음 ojdbc6.jar : " + ex.getMessage());
 		}	//드라이브가 있는지 없는 지 확인
@@ -21,9 +21,9 @@ public class DBConnectionOracle {
 			String DB_USER = "JSL43";
 			String DB_PASSWORD= "1234";
 
-			con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);	   
+			con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);	 //con을 생성   
 			if(con == null) System.out.println(" oracle db 연결실패===========");
-			else System.out.println(" oracle db 연결성공===========");
+//			else System.out.println(" oracle db 연결성공===========");
 		} catch (SQLException ex) {
 			System.out.println("SQLException: " + ex.getMessage());
 			System.out.println("SQLState: " + ex.getSQLState());
