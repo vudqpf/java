@@ -18,12 +18,14 @@ public class DBConnectionOracle {
 		
 		try {
 			String DB_URL = "jdbc:oracle:thin:@jsl70104:1521:ORCL";
-			String DB_USER = "JSL43";
-			String DB_PASSWORD= "1234";
+//			String DB_USER = "JSL43";
+//			String DB_PASSWORD= "1234";
+			String DB_USER = "scott";
+			String DB_PASSWORD= "tiger";
 
 			con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);	 //con을 생성   
 			if(con == null) System.out.println(" oracle db 연결실패===========");
-//			else System.out.println(" oracle db 연결성공===========");
+			else System.out.println(" oracle db 연결성공===========");
 		} catch (SQLException ex) {
 			System.out.println("SQLException: " + ex.getMessage());
 			System.out.println("SQLState: " + ex.getSQLState());
