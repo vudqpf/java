@@ -1,4 +1,4 @@
-package dao;
+package dto;
 
 public class J0725_1_dto_pra {
 	String no, name, area;

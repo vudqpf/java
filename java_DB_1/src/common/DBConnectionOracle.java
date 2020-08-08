@@ -18,20 +18,20 @@ public class DBConnectionOracle {
 		
 		try {
 			String DB_URL = "jdbc:oracle:thin:@jsl70104:1521:ORCL";
-//			String DB_USER = "JSL43";
-//			String DB_PASSWORD= "1234";
-			String DB_USER = "scott";
-			String DB_PASSWORD= "tiger";
+			String DB_USER = "JSL43";
+			String DB_PASSWORD= "1234";
+//			String DB_USER = "scott";
+//			String DB_PASSWORD= "tiger";
 
 			con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);	 //con을 생성   
 			if(con == null) System.out.println(" oracle db 연결실패===========");
-			else System.out.println(" oracle db 연결성공===========");
+			//else System.out.println(" oracle db 연결성공===========");
 		} catch (SQLException ex) {
 			System.out.println("SQLException: " + ex.getMessage());
 			System.out.println("SQLState: " + ex.getSQLState());
 		}
 		
-		return con;    //con을 리턴할 때 con이 못생성되면 null을 리턴!
+		return con;    //con을 리턴할 때 con이 생성안되면 null을 리턴!
 	}	
 	
 	public void close(Connection con, PreparedStatement ps) {                        
