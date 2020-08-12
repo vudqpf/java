@@ -107,7 +107,7 @@ public class J0804_1_dao {
 	}
 	
 	
-	//수정조회
+	//수정하기 위해 조회
 	public J0804_1_dto getMemberView(String no) {
 		J0804_1_dto dto = null;
 		String query = 		" select a.no, a.name, b.area_name, nvl(a.age,0) as age  " +

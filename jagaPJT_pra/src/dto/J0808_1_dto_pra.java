@@ -1,26 +1,23 @@
 package dto;
 
-public class J0716_1_dto_pra {
-	String name, ava, result;
-	int kor, eng, mat, total;
-	public J0716_1_dto_pra(String name, String ava, String result, int kor, int eng, int mat, int total) {
+public class J0808_1_dto_pra {
+	String no, name;
+	int kor, eng, mat, total, ava;
+	public J0808_1_dto_pra(String no, String name, int kor, int eng, int mat, int total, int ava) {
 		super();
+		this.no = no;
 		this.name = name;
-		this.ava = ava;
-		this.result = result;
 		this.kor = kor;
 		this.eng = eng;
 		this.mat = mat;
 		this.total = total;
+		this.ava = ava;
+	}
+	public String getNo() {
+		return no;
 	}
 	public String getName() {
 		return name;
-	}
-	public String getAva() {
-		return ava;
-	}
-	public String getResult() {
-		return result;
 	}
 	public int getKor() {
 		return kor;
@@ -34,5 +31,8 @@ public class J0716_1_dto_pra {
 	public int getTotal() {
 		return total;
 	}
+	public int getAva() {
+		return ava;
+	};
 	
 }
