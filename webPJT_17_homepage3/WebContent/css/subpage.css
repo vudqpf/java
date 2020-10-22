@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+
+<!-- body { font : 12px "굴림", Gulim ; background : url("images/bg_grid.gif") ; }	 -->
+#container {
+	width: 940px;
+	margin: 0px auto;
+	margin: 0px;
+	padding: 20px;
+	border: 0px solid #bcbcbc;
+	background : #ccc;
+}
+#header {
+	width: 940px;
+	height:140px;
+	padding: 0px;
+	margin-bottom: 20px;
+	border: 0px solid red;
+	background : #F5DA81;
+}
+#menu {
+	width: 130px;
+	height : 460px;
+	padding: 20px 10px;
+	margin-bottom: 20px;
+	float: left;
+	border: 0px solid #bcbcbc;
+	background :#E0F2F7;
+}	  
+#content {
+	width: 748px; 
+	height : 460px;
+	padding: 20px;
+	margin-bottom: 20px;
+	float: right;
+	border: 0px solid #bcbcbc;
+	background :#A9E2F3;
+}
+#footer {
+	clear: both;
+	padding: 20px;
+	border: 1px solid #bcbcbc;
+	background :#BCA9F5;
+}
+
+.header_menu li{
+	float:left;
+}
+
+.header_menu li a{
+	display : inline-block;
+	padding-top:5px;
+	width : 188px;
+	height : 20px;
+	background : #A9A9A9;
+	text-align:center;
+	line-height: 20px;
+	opacity : 0.8;
+	color : white;
+}
+
+#header{
+	background:url("../images/back_img_4.jpg");
+	position : relative;
+}
+.header_menu{
+	position : absolute;
+	top : 120px;
+}
+
+#s_div_1,#s_div_2,#s_div_3,#s_div_4{
+	position : absolute;
+	display : none;
+}
+#s_div_5{
+	position : absolute;
+	display : none;
+	right : 0px;
+}
+
+
+#s_div_1 ul li a{
+	width : 100px;
+	background : #A9D0F5;
+}  
+#s_div_2 ul li a{
+	width : 100px;
+	background : #A9D0F5;
+} 
+#s_div_3 ul li a{
+	width : 100px;
+	background : #A9D0F5;
+} 
+#s_div_4 ul li a{
+	width : 100px;
+	background : #A9D0F5;
+} 
+#s_div_5 ul li a{
+	width : 100px;
+	background : #A9D0F5;
+} 
+.top_right{
+	position : relative;
+	top : -15px;
+}
+.top_right li{
+	float : right;
+	border-right : 1px solid #6E6E6E;
+}
+.top_right li a{
+	display:inline-block;
+	width:50px;
+	height : 14px;
+	text-align:center;
+	color : #848484;
+	font-size : 10px;
+}
+
+
+#container {
+	width: 940px;
+	margin: 0px auto;
+	margin: 0px;
+	padding: 20px;
+	border: 0px solid #bcbcbc;
+	background : #ccc;
+}
+#header {
+	width: 940px;
+	height:140px;
+	padding: 0px;
+	margin-bottom: 20px;
+	border: 0px solid red;
+	background : #F5DA81;
+}
+#menu {
+	width: 130px;
+	height : 460px;
+	padding: 20px 10px;
+	margin-bottom: 20px;
+	float: left;
+	border: 0px solid #bcbcbc;
+	background :#E0F2F7;
+}	  
+#content {
+	width: 748px; 
+	height : 460px;
+	padding: 20px;
+	margin-bottom: 20px;
+	float: right;
+	border: 0px solid #bcbcbc;
+	background :#A9E2F3;
+}
+#footer {
+	clear: both;
+	padding: 20px;
+	border: 1px solid #bcbcbc;
+	background :#BCA9F5;
+}
+
+.header_menu li{
+	float:left;
+}
+
+.header_menu li a{
+	display : inline-block;
+	padding-top:5px;
+	width : 188px;
+	height : 20px;
+	background : #A9A9A9;
+	text-align:center;
+	line-height: 20px;
+	opacity : 0.8;
+	color : white;
+}
+
+#header{
+	background:url("../images/back_img_4.jpg");
+	position : relative;
+}
+.header_menu{
+	position : absolute;
+	top : 120px;
+}
+
+#s_div_1,#s_div_2,#s_div_3,#s_div_4{
+	position : absolute;
+	display : none;
+}
+#s_div_5{
+	position : absolute;
+	display : none;
+	right : 0px;
+}
+
+
+#s_div_1 ul li a{
+	width : 100px;
+	background : #A9D0F5;
+}  
+#s_div_2 ul li a{
+	width : 100px;
+	background : #A9D0F5;
+} 
+#s_div_3 ul li a{
+	width : 100px;
+	background : #A9D0F5;
+} 
+#s_div_4 ul li a{
+	width : 100px;
+	background : #A9D0F5;
+} 
+#s_div_5 ul li a{
+	width : 100px;
+	background : #A9D0F5;
+} 
+.top_right{
+	position : relative;
+	top : -15px;
+}
+.top_right li{
+	float : right;
+	border-right : 1px solid #6E6E6E;
+}
+.top_right li a{
+	display:inline-block;
+	width:50px;
+	height : 14px;
+	text-align:center;
+	color : #848484;
+	font-size : 10px;
+}
+
+.bord_list { padding-top:10px;}
+.bord_table {width:100%;}
+.bord_list th {
+	border-top:1px solid #848484;
+	border-bottom:1px solid #848484; 
+	padding: 10px;
+}
+.bord_table td {
+	border-bottom:1px solid #e0e0e0; 
+	padding:10px; 
+	text-align:center;}
+.bord_table td.title {text-align:left;}
+
+/* footer css */
+
+#footer {clear:both;background:#42464d; padding-top:10px; padding-bottom:10px; margin-top:60px;}
+#footer .address {font-style:normal; color:#ababb1; margin-bottom:20px;}
+#footer .address .title {font-size:14px; margin-bottom:8px; color:#fff;}
+#footer  .copyright {color:#fff;}
+
+.paging {clear:both; padding-top:30px; text-align:center;}
+.paging a  {padding:10px; border:1px solid #e0e0e0;}
+.paging a.active {background:#007dc6; color:#fff;}
+.paging .btn_write {background:#BDBDBD; padding:10px 16px; color:#fff; float:right;}
+
+
+
+	#menu ul li a{
+		font : bold 12px "돋음", Gulim ; 
+		color :#6E6E6E; 
+		border-bottom : 1px dotted #848484;
+		display : inline-block;
+		width : 130px;
+		height : 25px;
+		background : yellow;
+		line-height : 25px;
+	}
+	.arrow{
+		vertical-align:middle;
+		width : 6px;
+	}
+	.home_icon{
+		width : 15px;
+	}
+	#content{
+		font : 10px "돋음", Gulim ; 
+		color :#848484; 
+	}	
+	#content .title a{
+		font : 10px "돋음", Gulim ; 
+		color :#6E6E6E; 
+	}	
+.select_Box {
+	text-align : right;
+}
+
+.select_Box .sel_box{
+	width : 50px;
+	height : 20.5px;
+	font-size : 10px;
+	color :#848484; 
+}
+.select_Box .sel_text{
+	vertical-align:top;
+	width : 80px;
+	height : 16.5px;
+	font-size : 11px;
+}
+.select_Box .sel_button{
+	vertical-align:top;
+	width : 60px;
+	height : 20.5px;
+	font-size : 11px;
+	color :#848484; 
+}	
+
+/* footer css */
+#footer {clear:both;background:#42464d; padding-top:10px; padding-bottom:10px; margin-top:60px;}
+#footer .address {font-style:normal; color:#ababb1; margin-bottom:20px;}
+#footer .address .title {font-size:14px; margin-bottom:8px; color:#fff;}
+#footer  .copyright {color:#fff;}
+.paging{
+	margin-top : 20px;
+	text-align:center;
+}
+.paging .btn_write {
+
+	background:#BDBDBD; 
+	padding:10px 16px; 
+	color:#fff; 
+	
+}
+
+.bord_list { padding-top:20px;}
+.bord_table {width:100%;}
+
+.bord_table td {
+	border-top:1px solid #e0e0e0; 
+	border-bottom:1px solid #e0e0e0; 
+	padding:10px; 
+	text-align:left;
+}
+.bord_table .t_title{
+	vertical-align:top;
+	width : 600px;
+	height : 15px;
+	font-size : 11px;	
+	color :#848484; 
+	border:1px solid #ccc;	
+}
+.board_textarea_H270{
+	width:590px;
+	height:270px;
+	resize: none;
+	padding:5px;
+	font-size:12px;
+	border:1px solid #ccc;
+	text-align:left;
+	color :#848484; 
+}

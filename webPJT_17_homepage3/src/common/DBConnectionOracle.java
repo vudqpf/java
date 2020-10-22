@@ -6,36 +6,38 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class DBConnectionOracle {
-
-	public Connection getConnection(){
+	
+	public Connection getConnection() {
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");	 	
+			Class.forName("oracle.jdbc.driver.OracleDriver");	//
 		} catch (Exception ex) {
 			System.out.println("드라이버 없음 ojdbc6.jar : " + ex.getMessage());
-		}	
+		}	//드라이브가 있는지 없는 지 확인
 		
 		Connection con = null;
 		
 		try {
-			String DB_URL = "jdbc:oracle:thin:@115.93.111.4:1521:ORCL";
-//			String DB_URL = "jdbc:oracle:thin:@jsl70104:1521:ORCL";
+			String DB_URL = "jdbc:oracle:thin:@jsl70104:1521:ORCL";
+//			String DB_URL = "jdbc:oracle:thin:@115.93.111.4:1521:ORCL";
+//			String DB_USER = "JSL43online";
+//			String DB_PASSWORD= "1234";
+			String DB_USER = "JSL43";
+			String DB_PASSWORD= "1234";
 //			String DB_USER = "scott";
 //			String DB_PASSWORD= "tiger";
-			String DB_USER = "jsl43online";
-			String DB_PASSWORD= "1234";
 
-			con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);	
+			con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);	 //con을 생성   
 			if(con == null) System.out.println(" oracle db 연결실패===========");
-//			else System.out.println(" oracle db 연결성공~~~");
+			//else System.out.println(" oracle db 연결성공===========");
 		} catch (SQLException ex) {
 			System.out.println("SQLException: " + ex.getMessage());
 			System.out.println("SQLState: " + ex.getSQLState());
 		}
 		
-		return con;
+		return con;    //con을 리턴할 때 con이 생성안되면 null을 리턴!
 	}	
 	
-	public void close(Connection con, PreparedStatement ps) {
+	public void close(Connection con, PreparedStatement ps) {                        
 		try {
 			if(ps != null) 		ps.close();
 			if(con != null)		con.close();
