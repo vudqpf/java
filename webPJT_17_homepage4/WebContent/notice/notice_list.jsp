@@ -15,7 +15,7 @@
 	
 	ArrayList<Notice_dto> arr = dao.getNoticeList(select, search);
 	//*************page 시작**************/	
-	int	list_setup_count = 3;			// 한 페이지에 출력될 List 수
+	int	list_setup_count = 10;			// 한 페이지에 출력될 List 수
 	String r_page = request.getParameter("r_page");
 	if(r_page==null) r_page= "";
 	int			current_page;					// 현재페이지 번호

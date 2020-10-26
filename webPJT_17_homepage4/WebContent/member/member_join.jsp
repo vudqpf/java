@@ -4,6 +4,7 @@
 <script type="text/javascript">
  	function goJoin(){
  		//var ttt = checkEmpty(mem.t_id," ID 입력 ");
+ 		if(!checkEmpty(mem.t_id,         " ID 입력 하시오 "		)) return;
  		if(!checkEmpty(mem.id_check_Gubun,         " ID 중복검사 하시오 "		)) return;
  		if(mem.id_check_Gubun.value != mem.t_id.value){
  			alert("ID 중복검사 하시오");
@@ -59,7 +60,17 @@
 					alert("통신 실패");
 				},
 				success:function(data){				/*위의 형식이 문제가 없을 때*/
-					alert("넘어온 값:"+data);		/*화면에 보이는 내용이 data값으로 넘어옴!*/
+					//alert("넘어온 값:==="+data+"==");		/*화면에 보이는 내용이 data값으로 넘어옴!*/
+					$(".id_check_span").html(data);   /*$()소스안에 html안에 data를 넣겠다*/
+					if($.trim(data) == "사용가능!"){   /*$.trim() 안에 있는 데이터 값의 앞뒤 공백을 없애준다!*/
+						$(".id_check_span").css("color","blue");
+						mem.id_check_Gubun.value = id;  /*중복이 아닐경우 id_check_Gubun상자에 값을 넣어준다*/
+						mem.t_name.focus();
+					}else{
+						$(".id_check_span").css("color","red");
+						mem.id_check_Gubun.value = "";   /*중복일 경우 id_check_Gubun에 공백을 넣어준다!*/
+						mem.t_id.focus();
+					}
 				}
 			});
 			
@@ -93,10 +104,10 @@
 					  <th><label for="id">I D</label></th>
 					  <td>
 						<input name="t_id" type="text" size="10" id="id" title="id입력하세요">
-						<input type="button" onclick="checkId()" value="ID중복검사" class="checkB">
-					  	<input type="text" name="id_check_Gubun">
-							<!-- id_check_Gubun이 있는 이유는 id중복 검사를 하고  -->
+<!-- 중복체크 팝업창		<input type="button" onclick="checkId()" value="ID중복검사" class="checkB">   -->
+					  	<input type="hidden" name="id_check_Gubun">					<!-- id_check_Gubun이 있는 이유는 id중복 검사를 하고  -->
 						<input type="button" id="idCheck" value="ID중복검사ajax" class="checkB">
+						<span class="id_check_span"></span>
 					  </td>
 					</tr>
 					<tr>

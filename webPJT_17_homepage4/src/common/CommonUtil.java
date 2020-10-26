@@ -39,8 +39,8 @@ public class CommonUtil {
 		return yn;
 	}	
 	// null 검사
-	public static String checkNull(String sValue){
-		String result="";
+	public static String checkNull(String sValue){ //널이 아니면  result에 넘어온 값을넣어주고
+		String result="";							//nulldl이면 공백을 넘겨준다!
 		if(sValue != null) result = sValue;
 		return result;
 	}

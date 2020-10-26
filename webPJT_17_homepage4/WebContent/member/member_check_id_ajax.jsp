@@ -9,5 +9,5 @@
 	if(checkId == 0){ 
 		out.print("사용가능!");
 	} else { 
-		out.print("사용불가! 중복ID");
+		out.print("중복ID");
 	}%>

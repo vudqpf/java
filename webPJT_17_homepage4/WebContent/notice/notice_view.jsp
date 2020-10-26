@@ -67,7 +67,8 @@
 						<th>Attach</th>
 						<td colspan="3">
 						<%if (dto.getAttach() !=null){ %>
-						<%=dto.getAttach() %></td>
+							<a href="/common/filedown.jsp?t_file=<%=dto.getAttach()%>&t_gubun=notice"><%=dto.getAttach() %></td></a>
+							<!-- 정보를 2개 넘겨주려고 하면! &로 묶어준다! -->
 						<%} %>
 					</tr>	
 					<tr>

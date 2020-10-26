@@ -24,8 +24,9 @@
 			return;
 		}
 		noti.method="post";
-	//	noti.action="db_notice_save.jsp";
-	 	noti.action="db_notice.jsp";   /*등록, 수정, 삭제를 한 jps에서 */
+//		noti.action="db_notice_save.jsp";
+//	 	noti.action="db_notice.jsp";   /*등록, 수정, 삭제를 한 jps에서 */
+	 	noti.action="db_notice_save_file.jsp";   
 		noti.submit();
 	}
 </script>
@@ -45,7 +46,7 @@
 			<p class="n_title">
 				NOTICE
 			</p>
-			<form name="noti">
+			<form name="noti" enctype="multipart/form-data"> <!--첨부파일을 가지고 있는 form에 enctype를 지정해 줘야 한다. -->
 			<input type="hidden" name="t_work_gubun" value="insert">
 			<table class="boardForm">
 				<colgroup>
@@ -70,7 +71,7 @@
 					<tr>
 						<th>Writer</th>
 						<td>
-							<input type="hidden" name="t_reg_name" value="<%=session_name%>" class="input100"></td>
+							<input type="hidden" name="t_reg_name" value="<%=session_name%>" class="input100"><%=session_name%></td>
 						<th>RegDate</th>
 						<td><input type="date" name="t_reg_date" value="<%=com.getToday() %>" class="input130"></td>
 					</tr>	
