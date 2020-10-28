@@ -2,7 +2,8 @@ package org.opentutorials.javatutorials.operstor;
 
 public class J201020 {
 	public static void main(String[] args) {
-/*		int a= 10;
+/*		
+  		int a= 10;
 		int b=3;
 		
 		float c = 10.0F;
@@ -48,7 +49,8 @@ public class J201020 {
 		System.out.printf("%d - %d = %d%n",a, b, a - b);
 		System.out.printf("%d * %d = %d%n",a, b, a * b);
 		System.out.printf("%d / %f = %f%n",a, (float)b, a / (float)b);
-*/		
+*/
+/* 오버플로우
 		int a = 1_000_000;		//10의 6제곱
 		int b = 2_000_000;		//10의 6제곱
 		
@@ -56,5 +58,6 @@ public class J201020 {
 		long c = a * b;				//오버플로우 발생  
 			 c = a * (long)b;		//둘 중 하나의 값을 형변환이 필요함
 		System.out.println(c);     //
+*/		
 	}
 }

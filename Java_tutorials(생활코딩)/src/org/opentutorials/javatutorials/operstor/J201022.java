@@ -2,7 +2,8 @@ package org.opentutorials.javatutorials.operstor;
 
 public class J201022 {
 	public static void main(String[] args) {
-/*		String id = args[0];    
+/*	equals
+	String id = args[0];    
 		String password = args[1];
 		if(id.equals("egoing")) {
 			if(password.equals("111111")) {
@@ -15,8 +16,8 @@ public class J201022 {
 			System.out.println("wrong");
 		}
 */
-/*
-	//swicth문에는 byte, short, char, int, enum, String, Character, Byte, Short, Integer만 가능	
+/* switch
+	//switch문에는 byte, short, char, int, enum, String, Character, Byte, Short, Integer만 가능	
 		System.out.println("switch(1)");
 		switch(1) {
 		case 1:
@@ -62,6 +63,6 @@ public class J201022 {
 			System.out.println("default");
 		}
 */		
-
+		
 	}
 }
